@@ -1,0 +1,411 @@
+.banner {
+    height: 500px;
+    background-color: #F5F5F5;
+}
+
+.banner .wrapper {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.banner .wrapper>ul {
+    display: flex;
+    width: 300%;
+}
+
+.banner .wrapper ol {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.banner .wrapper ol li {
+    height: 22px;
+    width: 22px;
+    margin: 0 5px;
+    padding: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.banner .wrapper ol li::after {
+    content: '';
+    display: block;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.banner .wrapper ol .activ {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.banner .wrapper .subnav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .42);
+}
+
+.banner .subnav li {
+    position: relative;
+    padding: 0 10px 0 29px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.banner .subnav li::after {
+    content: "\e687";
+    position: absolute;
+    right: 20px;
+    color: #fff;
+    font-family: iconfont;
+}
+
+.banner .subnav li:hover {
+    background-color: var(--green);
+}
+
+.banner .subnav li a {
+    color: #fff;
+    font-size: 14px;
+
+}
+
+.banner .subnav li a:first-child {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.hd {
+    display: flex;
+    justify-content: space-between;
+    /* 侧轴垂直居中 */
+    align-items: center;
+    margin: 0 0 30px;
+    padding-top: 40px;
+}
+
+.hd h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.hd h2 span {
+    margin-left: 35px;
+    font-size: 16px;
+    color: #a1a1a1;
+}
+
+.hd .all {
+    font-size: 16px;
+    /* margin-top: 10px; */
+    margin-left: 58px;
+    color: #a1a1a1;
+}
+
+/* .hd .all::after {
+    content: "";
+    content: "\e687";
+    color: #a1a1a1;
+    margin-left: 8px;
+    font-family: iconfont;
+} */
+.hd .all i {
+    margin-left: 5px;
+}
+
+.hd .all:hover {
+    color: var(--green);
+}
+
+.bd ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bd ul li {
+    height: 404px;
+    width: 304px;
+    background-color: #EEF9F4;
+    text-align: center;
+    transition: all .3s;
+}
+
+.bd ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 3px 10px 0px var(--green);
+}
+
+.bd ul li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.bd li a .pic {
+    height: 304px;
+    width: 304px;
+    margin-bottom: 17.5px;
+}
+
+.bd li a h5 {
+    font-size: 20px;
+    margin-bottom: 0 15px 8px;
+}
+
+.bd li a span {
+    font-size: 22px;
+    color: #AA2113;
+}
+
+.bd li a p {
+    font-size: 16px;
+    color: #A1A1A1;
+}
+
+.recommend .bd li {
+    background-color: #fff;
+}
+
+.brand {
+
+    height: 468px;
+    margin: 60px 0 20px;
+
+    background-color: #F5F5F5;
+}
+
+.brand .hd {
+    position: relative;
+}
+
+.brand .btn {
+    display: flex;
+    position: absolute;
+    bottom: -18px;
+    right: 0;
+}
+
+.brand .btn a {
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    margin-left: 12px;
+    background-color: #e2e2e2;
+    color: #fff;
+}
+
+/* .brand .btn .btnright, */
+.brand .btn a:hover {
+    background-color: var(--green);
+}
+
+.brand .bd ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand .bd ul li {
+    width: 244px;
+    height: 306px;
+}
+
+.fresh h2 {
+    flex: 1;
+}
+
+.hd ul {
+    display: flex;
+}
+
+
+
+.hd ul a {
+    margin: 0 5px;
+    padding: 0 5px;
+}
+
+.hd ul a:hover {
+    background-color: var(--green);
+    color: #fff;
+}
+
+.fresh .content {
+    display: flex;
+    justify-content: space-between;
+    height: 610px;
+}
+
+.fresh .content .left {
+    height: 100%;
+    width: 248px;
+}
+
+.fresh .content .right {
+    height: 100%;
+    width: 968px;
+}
+
+.fresh .content .right ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fresh .content .right li {
+    position: relative;
+    height: 305px;
+    width: 242px;
+    overflow: hidden;
+}
+
+
+
+.fresh .content .right li>a {
+    display: block;
+    height: 305px;
+    width: 242px;
+    padding: 10px 0 0 20px;
+    border: 2px solid transparent;
+}
+
+.fresh .content .right li a:hover {
+    border: 2px solid var(--green);
+}
+
+.fresh .content .right a .pic {
+    width: 200px;
+    height: 180px;
+}
+
+.fresh .content .right .info {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.fresh .content .right .info h5 {
+    font-size: 16px;
+    color: #333333;
+}
+
+.fresh .content .price {
+    margin-top: 7px;
+    font-size: 16px;
+    color: #AA2113;
+}
+
+.fresh .content .price span {
+    font-size: 22px;
+}
+
+.fresh .content .find {
+    position: absolute;
+    left: 0;
+    bottom: -84px;
+    width: 242px;
+    height: 84px;
+    padding: 15px 55px 0;
+    background-color: var(--green);
+    text-align: center;
+    transition: all .3s;
+}
+
+.fresh .content .find h4 {
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.11);
+}
+
+.fresh .content .find a,
+.fresh .content .find a i {
+    font-size: 13px;
+    color: #fff;
+}
+
+.fresh .content .right li:hover .find {
+    bottom: 0px;
+}
+
+.topic .bd ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.topic .bd ul li {
+    height: 355px;
+    width: 405px;
+    /* background-color: #916969; */
+    background-color: #fff;
+}
+
+.topic .bd ul li .pic {
+    position: relative;
+    width: 100%;
+    height: 288px;
+}
+
+.topic .bd .txt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    padding: 20px 15px 0;
+    text-align: left;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, .5));
+}
+
+.topic .bd .txt h5 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.topic .bd .txt p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.topic .bd .txt .price {
+    width: 79px;
+    height: 25px;
+    font-size: 16px;
+    color: #AA2113;
+    background-color: #fff;
+}
+
+.topic .price span {
+    font-size: 18px;
+}
+
+.topic .browse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 67px;
+    padding: 0 15px 0
+}
+
+.topic .browse .left span {
+    margin-right: 10px;
+    color: #666666;
+}
+
+.topic .icon-favorites-fill {
+    color: #AA2113;
+}

@@ -1,0 +1,325 @@
+/* 强制文字一行显示
+溢出部分省略号代替 */
+.text-overflow {
+    /* 强制一行显示 */
+    white-space: nowrap;
+    /* 溢出隐藏 */
+    overflow: hidden;
+    /* 溢出部分省略号代替 */
+    text-overflow: ellipsis;
+}
+
+/* 公共的样式 页面头部和顶部 */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 颜色声明 */
+:root {
+    --gray: #a1a1a1;
+    --green: #00be9a;
+}
+
+.shortcut {
+    background-color: #333333;
+}
+
+.shortcut .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    height: 52px;
+    line-height: 52px;
+}
+
+.shortcut ul {
+    display: flex;
+}
+
+.shortcut li a {
+    color: #fff;
+    font-size: 14px;
+    padding: 0 15px;
+    border-right: 1px solid #999;
+}
+
+.shortcut ul li:last-child a {
+    border-right: 0;
+}
+
+.shortcut li a:hover {
+    color: var(--green);
+}
+
+.shortcut li a i {
+    display: inline-block;
+    font-size: 19px;
+    margin-top: -3px;
+    vertical-align: middle;
+}
+
+.header {
+    display: flex;
+}
+
+.header .logo {
+    height: 88px;
+    width: 200px;
+    margin: 22px 0;
+}
+
+.header .logo h1 a {
+    display: block;
+    height: 88px;
+    width: 200px;
+    /* font-size: 0; */
+    text-indent: -9999em;
+    overflow: hidden;
+    background: url(../images/logo.png) no-repeat;
+}
+
+.header .nav ul {
+    display: flex;
+    margin: 54px 0 0 29px;
+}
+
+.header ul li a {
+    display: block;
+    font-size: 16px;
+    margin: 0 20px;
+    line-height: 38px;
+    color: #333;
+}
+
+.header ul li a:hover {
+    color: var(--green);
+    border-bottom: 2px solid var(--green);
+}
+
+.search {
+    position: relative;
+    height: 42px;
+    /* 加上盒子宽度，后面的车就固定了 */
+    /* width: 220px; */
+    margin-top: 54px;
+    margin-left: 15px;
+}
+
+.search input {
+    height: 42px;
+    width: 160px;
+    padding-left: 28px;
+    font-size: 16px;
+    line-height: 38px;
+    border-bottom: 2px solid #f4f4f4;
+    transition: all .3s;
+}
+
+.search input::placeholder {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.search input:focus {
+    width: 220px;
+}
+
+
+.search i {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 42px;
+    width: 30px;
+    font-size: 20px;
+    color: #ccc;
+}
+
+.car {
+    position: relative;
+    margin-top: 47px;
+}
+
+.car i {
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.car span {
+    position: absolute;
+    top: 3px;
+    left: 70px;
+    height: 15px;
+    padding: 0 6px;
+    line-height: 15px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #E26237;
+    border-radius: 7px 7px;
+}
+
+.footer {
+    height: 581.5px;
+    background-color: #F5F5F5;
+}
+
+.footer .top {
+    height: 178px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.footer .top ul {
+    display: flex;
+    justify-content: space-evenly;
+    height: 178px;
+    width: 100%;
+    padding: 60px 0;
+
+}
+
+.footer .top li {
+    display: flex;
+    height: 58px;
+}
+
+.footer li h5 {
+    overflow: hidden;
+    height: 58px;
+    width: 58px;
+    margin-right: 20px;
+    background-image: url(../images/sprite.png);
+    text-indent: -9999em;
+
+}
+
+.footer li p {
+    height: 58px;
+    line-height: 58px;
+    font-size: 28px;
+}
+
+/* s .footer ul li:nth-child(1) h5 {
+    background-position: 0 0;
+} */
+
+.footer ul li:nth-child(2) h5 {
+    background-position: 0 -58px;
+}
+
+.footer ul li:nth-child(3) h5 {
+    background-position: 0 -116px;
+}
+
+.footer ul li:nth-child(4) h5 {
+    background-position: 0 -174px;
+}
+
+.footer .help {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    padding-top: 60px;
+}
+
+.help .left {
+    display: flex;
+}
+
+.help .left dl {
+    margin-right: 84px;
+}
+
+.help .left dt {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.help .left dl a {
+    display: block;
+    font-size: 16px;
+    color: #969696;
+    margin-bottom: 10px;
+}
+
+.help .left dl a:hover {
+    color: #333333;
+}
+
+.help .right ul {
+    display: flex;
+}
+
+.help .right ul li {
+    text-align: center;
+}
+
+.help .right ul li:last-child {
+    margin-left: 55px;
+}
+
+.help .right img {
+    height: 120px;
+}
+
+.help .right p {
+    font-size: 16px;
+    color: #969696;
+}
+
+.help a i {
+    color: var(--green);
+}
+
+/* 
+.footer .copyright ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px;
+}
+
+.footer .copyright {
+    text-align: center;
+    width: 100%;
+}
+
+.footer .copyright li {
+    border-right: 1px solid #969696;
+}
+
+.footer .copyright li:last-child {
+    border: 0;
+}
+
+.footer .copyright li a {
+    font-size: 16px;
+    color: #969696;
+    margin: 0 15px;
+}
+
+.footer .copyright li a:hover {
+    color: #333333;
+} */
+.copyright p {
+    text-align: center;
+    line-height: 32px;
+}
+
+.copyright p a {
+    font-size: 16px;
+    color: #969696;
+
+}
+
+.copyright p a:hover {
+    color: var(--green);
+}
+
+.copyright p span {
+    margin: 0 5px;
+}
+
+.footer .copyright p {
+    font-size: 16px;
+    color: #969696;
+}
